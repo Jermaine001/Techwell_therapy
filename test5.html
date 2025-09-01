@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techwell Counselling & Therapy</title>
+
+    <!--Links to External styling resources-->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Links to manin css styling resources-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-navbar" id="topNavbar">
+        <div class="top-nav-left">
+            <span>(+254) 712 365 478</span>
+            <span>info@serenitytherapy.com</span>
+        </div>
+        <div class="top-nav-right">
+            <span>Mon-Fri: 9am-7pm</span>
+            <span>Emergency: (+254) 987-457 575 </span>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-navbar">
+        <div class="nav-left">
+            <input type="checkbox" id="menu-toggle-input" style="display: none;">
+            <label for="menu-toggle-input" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Case Studies</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-logo">
+            <img src="logo.png" alt="Serenity Counseling Logo">
+        </div>
+        
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="book-btn">Book Appointment</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Journey to Mental Wellness Starts Here</h1>
+            <p>At Techwell Therapy, we believe mental health is the foundation of a fulfilling life. Whether you are seeking personal counselling, family therapy, or professional training in mental wellness, our dedicated team is here to support and empower you.</p>
+            <a href="#" class="book-btn">Our Programmes</a>
+        </div>
+    </section>
+
+    <!--About section-->
+
+    <!-- Content Sections -->
+    <section class="content-section">
+        <h2>Our Services</h2>
+        <p>At Techwell Therapy, we provide a wide range of counselling, therapy, and wellness services designed to meet
+           you where you are. Whether you’re seeking individual support, family guidance, or group therapy, our compassionate
+           professionals are here to walk with you on your journey toward healing and growth.
+        </p>
+    </section>
+
+    <section class="content-section">
+        <h2>How it Works</h2>
+        <p>Booking a session with Techwell Therapy is quick and straightforward. We’ve designed the process to make sure you feel supported at every step — from your first click to your first conversation with a therapist.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <!-- First Section: Logo and Description -->
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Serenity Counseling Logo">
+                </div>
+                <p class="footer-description">
+                   At Techwell Therapy, we believe every mind deserves care and every story matters.
+                </p>
+            </div>
+            
+            <!-- Second Section: Services -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Mission</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Vision</a></li>
+                </ul>
+            </div>
+            
+            <!-- Third Section: Resources -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Therapy Courses</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Workshops & Events</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Blog & Articles</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Self-Help Resources</a></li>
+                </ul>
+            </div>
+            
+            <!-- Fourth Section: Newsletter and Social -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Stay Connected</h3>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025  <b>Techwell Therapy</b>. Healing Minds, Empowering Futures. | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+ 
+    <script>
+        // JavaScript for hiding top navbar on scroll
+        let lastScrollTop = 0;
+        const topNavbar = document.getElementById('topNavbar');
+        
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                topNavbar.classList.add('hide');
+            } else {
+                topNavbar.classList.remove('hide');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Simple animation for the image when it comes into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const image = document.querySelector('.about-image');
+            image.style.opacity = '0';
+            image.style.transition = 'opacity 1s ease-in-out';
+            
+            setTimeout(() => {
+                image.style.opacity = '1';
+            }, 300);
+        });
+    </script>
+</body>
+</html>
